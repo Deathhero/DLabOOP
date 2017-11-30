@@ -10,11 +10,11 @@ using namespace std;
 
 // Простейший контейнер на основе одномерного массива
 class container {
+public:
 	car *cont;
 	int len;
 	container *next;
 	container *prev;
-public:
 	container();   // инициализация контейнера
 	~container() { Clear(); }   // утилизация контейнера
 

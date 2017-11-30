@@ -1,0 +1,3 @@
+It is truck. Carrying capacity = 3
+Engine power = 1
+Fuel consumption = 2.5

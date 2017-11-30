@@ -1,0 +1,6 @@
+Container contains 3 elements.
+1: 
+2: It is truck. Carrying capacity = 3
+Engine power = 1
+Fuel consumption = 2.5
+3: 
