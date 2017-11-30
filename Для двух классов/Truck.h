@@ -1,25 +1,23 @@
-#ifndef _passengercar
-#define _passengercar
 #include <stdio.h> 
 #include <stdlib.h>
 #include <fstream>
 #include <iostream>
 #include "Car.h"
+
+#ifndef _truck
+#define _truck
+
 using namespace std;
 
-class passengercar : public car 
-{
+class truck : public car {
 public:
-	short int maxspeed;
+	int carryingcapacity;
 	// переопределяем интерфейс класса
 	void InData(ifstream &ifst);  // ввод 
 	void Out(ofstream &ofst);     // вывод 
-	void OutOnlyPassengerCar(ofstream &ofst);
 	void Multimethod(car* c, ofstream &outFile);
-	void CheckWithTruck(ofstream &outFile);
 	void CheckWithBus(ofstream &outFile);
-	void CheckWithPassengerCar(ofstream &outFile);
-	float Func();
-	passengercar() {} // создание без инициализации.
+	void CheckWithTruck(ofstream &outFile);
+	truck() {} // создание без инициализации.
 };
 #endif

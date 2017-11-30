@@ -16,6 +16,10 @@ public:
 	void InData(ifstream &ifst);  // ввод 
 	void Out(ofstream &ofst);     // вывод 
 	void OutOnlyBus(ofstream &ofst);
+	void Multimethod(car* c, ofstream &outFile);
+	void CheckWithTruck(ofstream &outFile);
+	void CheckWithBus(ofstream &outFile);
+	void CheckWithPassengerCar(ofstream &outFile);
 	float Func();
 	bus() {} // создание без инициализации.
 };
