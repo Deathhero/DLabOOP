@@ -6,7 +6,15 @@
 
 using namespace std;
 
+void CheckInputFile(ifstream &ifst);
+void CheckWrongInput(ifstream &ifst);
+
 void car::InData(ifstream &ifst) {
-	ifst >> enginepower;
-	ifst >> fuelconsumption;
+	CheckInputFile(ifst);
+	ifst >> enginepower >> fuelconsumption;
+	if (enginepower <= 0 || fuelconsumption <= 0 )
+	{
+		cout << "Incorrect values in car input." << endl;
+		exit(1);
+	}
 }

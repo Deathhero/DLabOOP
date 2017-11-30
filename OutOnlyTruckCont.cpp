@@ -6,8 +6,11 @@
 
 using namespace std;
 
+void CheckOutputFile(ostream &ofst);
+
 void container::OutOnlyTruck(ofstream &outFile)
 {
+	CheckOutputFile(outFile);
 	outFile << "Container contains " << len << " elements." << endl;
 	container *p = this;
 	for (int i = 0; i < len - 1; i++)

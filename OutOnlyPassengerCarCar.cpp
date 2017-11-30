@@ -6,6 +6,9 @@
 
 using namespace std;
 
+void CheckOutputFile(ostream &ofst);
+
 void car::OutOnlyPassengerCar(ofstream &ofst) {
+	CheckOutputFile(ofst);
 	ofst << endl;
 }
