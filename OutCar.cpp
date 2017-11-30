@@ -8,4 +8,5 @@ using namespace std;
 
 void car::Out(ofstream &ofst) {
 	ofst << "Engine power = " << enginepower << endl;
+	ofst << "Fuel consumption = " << fuelconsumption << endl;
 }

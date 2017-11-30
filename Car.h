@@ -10,6 +10,7 @@ using namespace std;
 class car {
 public:
 	int enginepower;
+	float fuelconsumption;
 	// идентификация, порождение и ввод фигуры из потока
 public:
 	static car* In(ifstream &ifst);
