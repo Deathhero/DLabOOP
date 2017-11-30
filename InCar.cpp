@@ -5,6 +5,7 @@
 #include "Car.h"
 #include "Bus.h"
 #include "Truck.h"
+#include "Passengercar.h"
 
 using namespace std;
 
@@ -18,6 +19,9 @@ car* car::In(ifstream &ifst) {
 		break;
 	case 2:
 		a = new bus;
+		break;
+	case 3:
+		a = new passengercar;
 		break;
 	default:
 		return 0;
