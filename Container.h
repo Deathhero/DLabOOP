@@ -22,6 +22,7 @@ public:
 	void Out(ofstream &ofst);  // вывод фигур
 	void OutOnlyBus(ofstream &ofst);
 	void OutOnlyTruck(ofstream &ofst);
+	void OutOnlyPassengerCar(ofstream &ofst);
 	void Clear();  // очистка контейнера от фигур
 	void Sort();
 };

@@ -5,7 +5,6 @@
 #include <fstream>
 #include <iostream>
 #include "Car.h"
-
 using namespace std;
 
 class passengercar : public car {
@@ -14,6 +13,8 @@ public:
 	// переопределяем интерфейс класса
 	void InData(ifstream &ifst);  // ввод 
 	void Out(ofstream &ofst);     // вывод 
+	void OutOnlyPassengerCar(ofstream &ofst);
+	float Func();
 	passengercar() {} // создание без инициализации.
 };
 #endif

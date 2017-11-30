@@ -15,8 +15,8 @@ public:
 	// переопределяем интерфейс класса
 	void InData(ifstream &ifst);  // ввод 
 	void Out(ofstream &ofst);     // вывод 
-	float Func();
 	void OutOnlyTruck(ofstream &ofst);
+	float Func();
 	truck() {} // создание без инициализации.
 };
 #endif
