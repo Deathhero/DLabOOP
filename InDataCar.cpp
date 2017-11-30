@@ -8,4 +8,5 @@ using namespace std;
 
 void car::InData(ifstream &ifst) {
 	ifst >> enginepower;
+	ifst >> fuelconsumption;
 }
