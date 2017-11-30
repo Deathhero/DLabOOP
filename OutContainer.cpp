@@ -17,6 +17,7 @@ void container::Out(ofstream &outFile)
 	{
 		outFile << k << ": ";
 		p->cont->Out(outFile);
+		outFile << "Cargo weight / Engine power = " << p->cont->Func() << endl;
 		p = p->next;
 		k++;
 	}
