@@ -18,5 +18,7 @@ public:
 	virtual void Out(ofstream &ofst) = 0;    // вывод 
 	virtual float Func() = 0;
 	bool Compare(car *next);
+	virtual void OutOnlyBus(ofstream &ofst);    // вывод 
+	virtual void OutOnlyTruck(ofstream &ofst);    // вывод 
 };
 #endif

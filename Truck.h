@@ -16,6 +16,7 @@ public:
 	void InData(ifstream &ifst);  // ввод 
 	void Out(ofstream &ofst);     // вывод 
 	float Func();
+	void OutOnlyTruck(ofstream &ofst);
 	truck() {} // создание без инициализации.
 };
 #endif
