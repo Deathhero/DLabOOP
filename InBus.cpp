@@ -9,7 +9,8 @@ using namespace std;
 void CheckInputFile(ifstream &ifst);
 void CheckWrongInput(ifstream &ifst);
 
-void bus::InData(ifstream &ifst) {
+void bus::InData(ifstream &ifst) 
+{
 	CheckInputFile(ifst);
 	car::InData(ifst);
 	ifst >> passengercapacity;

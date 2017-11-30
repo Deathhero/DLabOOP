@@ -9,7 +9,8 @@ using namespace std;
 void CheckInputFile(ifstream &ifst);
 void CheckWrongInput(ifstream &ifst);
 
-void car::InData(ifstream &ifst) {
+void car::InData(ifstream &ifst)
+{
 	CheckInputFile(ifst);
 	ifst >> enginepower >> fuelconsumption;
 	if (enginepower <= 0 || fuelconsumption <= 0 )

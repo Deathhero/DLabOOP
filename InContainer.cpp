@@ -12,7 +12,8 @@ void CheckWrongInput(ifstream &ifst);
 void container::In(ifstream &ifst)
 {
 	CheckInputFile(ifst);
-	if (ifst.eof()) {
+	if (ifst.eof()) 
+	{
 		cerr << "Empty File!" << endl;
 		exit(1);
 	}

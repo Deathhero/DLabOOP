@@ -9,7 +9,8 @@
 
 using namespace std;
 
-class truck : public car {
+class truck : public car 
+{
 public:
 	int carryingcapacity;
 	// переопределяем интерфейс класса

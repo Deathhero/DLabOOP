@@ -7,12 +7,12 @@
 
 using namespace std;
 
-class car {
+class car 
+{
 public:
 	int enginepower;
 	float fuelconsumption;
 	// идентификация, порождение и ввод фигуры из потока
-public:
 	static car* In(ifstream &ifst);
 	virtual void InData(ifstream &ifst) = 0; // ввод
 	virtual void Out(ofstream &ofst) = 0;    // вывод 

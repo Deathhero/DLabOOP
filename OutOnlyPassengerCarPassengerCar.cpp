@@ -8,7 +8,8 @@ using namespace std;
 
 void CheckOutputFile(ostream &ofst);
 
-void passengercar::OutOnlyPassengerCar(ofstream &ofst) {
+void passengercar::OutOnlyPassengerCar(ofstream &ofst)
+{
 	CheckOutputFile(ofst);
 	Out(ofst);
 }

@@ -7,7 +7,8 @@
 #include "Car.h"
 using namespace std;
 
-class passengercar : public car {
+class passengercar : public car 
+{
 public:
 	short int maxspeed;
 	// переопределяем интерфейс класса

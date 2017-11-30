@@ -6,17 +6,20 @@
 
 using namespace std;
 
-float passengercar::Func() {
+float passengercar::Func() 
+{
 	if (enginepower != 0)
 	{
 		float k = float(maxspeed) / enginepower;
-		if (abs((k / enginepower) - maxspeed) >= 0.00001) {
+		if (abs((k / enginepower) - maxspeed) >= 0.00001)
+		{
 			cerr << "ERROR FUNC PASSENGER CAR OVERFLOW" << endl;
 			return 0;
 		}
 		return k;
 	}
-	else {
+	else
+	{
 		cout << "ERROR! Division by zero in func passenger car!" << endl;
 		return 0;
 	}

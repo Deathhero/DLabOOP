@@ -8,7 +8,8 @@
 
 using namespace std;
 
-class bus : public car {
+class bus : public car 
+{
 public:
 	short int passengercapacity;
 	// переопределяем интерфейс класса

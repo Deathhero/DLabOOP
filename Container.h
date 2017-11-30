@@ -9,7 +9,8 @@
 using namespace std;
 
 // Простейший контейнер на основе одномерного массива
-class container {
+class container 
+{
 public:
 	car *cont;
 	int len;
