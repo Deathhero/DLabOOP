@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-void bus::Multimethod(car* c, ofstream &outFile)
+void bus::Multimethod(car* c, ostream &outFile)
 {
 	c->CheckWithBus(outFile);
 }

@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void container::Sort()
+void container::Sort(int d)
 {
 	container *p = this;
 	bool flag;
@@ -24,7 +24,19 @@ void container::Sort()
 			p = p->next;
 			car *two;
 			two = p->cont;
-			bool k = one->Compare(two);
+			bool k;
+			switch (d)
+			{
+			case 0:
+				k = one->Compare(two);
+				break;
+			case 1:
+				k = !one->Compare(two);
+				break;
+			default:
+				cerr << "Inknown d in sort function!" << endl;
+				exit(1);
+			}
 			if (k == true)
 			{
 				p->cont = one;

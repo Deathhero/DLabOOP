@@ -20,12 +20,12 @@ public:
 	~container() { Clear(); }   // утилизация контейнера
 
 	void In(ifstream &ifst);  // ввод фигур
-	void Out(ofstream &ofst);  // вывод фигур
-	void OutOnlyBus(ofstream &ofst);
-	void OutOnlyTruck(ofstream &ofst);
-	void OutOnlyPassengerCar(ofstream &ofst);
-	void Multimethod(ofstream &outFile);
+	void Out(ostream &ofst);  // вывод фигур
+	void OutOnlyBus(ostream &ofst);
+	void OutOnlyTruck(ostream &ofst);
+	void OutOnlyPassengerCar(ostream &ofst);
+	void Multimethod(ostream &outFile);
 	void Clear();  // очистка контейнера от фигур
-	void Sort();
+	void Sort(int d);
 };
 #endif

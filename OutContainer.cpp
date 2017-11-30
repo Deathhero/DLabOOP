@@ -8,7 +8,7 @@ using namespace std;
 
 void CheckOutputFile(ostream &ofst);
 
-void container::Out(ofstream &outFile)
+void container::Out(ostream &outFile)
 {
 	CheckOutputFile(outFile);
 	outFile << "Container contains " << len << " elements." << endl;

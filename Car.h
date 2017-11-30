@@ -15,14 +15,14 @@ public:
 	// идентификация, порождение и ввод фигуры из потока
 	static car* In(ifstream &ifst);
 	virtual void InData(ifstream &ifst) = 0; // ввод
-	virtual void Out(ofstream &ofst) = 0;    // вывод 
-	virtual void OutOnlyBus(ofstream &ofst);    // вывод 
-	virtual void OutOnlyTruck(ofstream &ofst);    // вывод 
-	virtual void OutOnlyPassengerCar(ofstream &ofst);    // вывод 
-	virtual void Multimethod(car* c, ofstream &outFile) = 0;
-	virtual void CheckWithTruck(ofstream &outFile) = 0;
-	virtual void CheckWithBus(ofstream &outFile) = 0;
-	virtual void CheckWithPassengerCar(ofstream &outFile) = 0;
+	virtual void Out(ostream &ofst) = 0;    // вывод 
+	virtual void OutOnlyBus(ostream &ofst);    // вывод 
+	virtual void OutOnlyTruck(ostream &ofst);    // вывод 
+	virtual void OutOnlyPassengerCar(ostream &ofst);    // вывод 
+	virtual void Multimethod(car* c, ostream &outFile) = 0;
+	virtual void CheckWithTruck(ostream &outFile) = 0;
+	virtual void CheckWithBus(ostream &outFile) = 0;
+	virtual void CheckWithPassengerCar(ostream &outFile) = 0;
 	virtual float Func() = 0;
 	bool Compare(car *next);
 };

@@ -8,7 +8,7 @@ using namespace std;
 
 void CheckOutputFile(ostream &ofst);
 
-void container::OutOnlyPassengerCar(ofstream &outFile)
+void container::OutOnlyPassengerCar(ostream &outFile)
 {
 	CheckOutputFile(outFile);
 	outFile << "Container contains " << len << " elements." << endl;

@@ -485,7 +485,7 @@ TEST_F(ContainerTest, CheckSort)
 
 	c->len = 3;
 
-	c->Sort();
+	c->Sort(0);
 	c->Out(ofst);
 	ofst.close();
 
@@ -501,7 +501,7 @@ TEST_F(ContainerTest, CheckSortEmpty)
 
 	container *c = new container;
 
-	c->Sort();
+	c->Sort(0);
 	c->Out(ofst);
 	ofst.close();
 
@@ -544,7 +544,7 @@ TEST_F(ContainerTest, CheckSortEqual)
 
 	c->len = 2;
 
-	c->Sort();
+	c->Sort(0);
 	c->Out(ofst);
 	ofst.close();
 

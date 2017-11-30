@@ -8,7 +8,7 @@ using namespace std;
 
 void CheckOutputFile(ostream &ofst);
 
-void bus::OutOnlyBus(ofstream &ofst) 
+void bus::OutOnlyBus(ostream &ofst) 
 {
 	CheckOutputFile(ofst);
 	Out(ofst);

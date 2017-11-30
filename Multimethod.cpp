@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void container::Multimethod(ofstream &outFile)
+void container::Multimethod(ostream &outFile)
 {
 	container *temp1 = this;
 	for (int i = 0; i < len - 1; i++)

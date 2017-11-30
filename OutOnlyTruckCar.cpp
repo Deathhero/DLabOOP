@@ -8,7 +8,7 @@ using namespace std;
 
 void CheckOutputFile(ostream &ofst);
 
-void car::OutOnlyTruck(ofstream &ofst)
+void car::OutOnlyTruck(ostream &ofst)
 {
 	CheckOutputFile(ofst);
 	ofst << endl;

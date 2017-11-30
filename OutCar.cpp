@@ -8,7 +8,7 @@ using namespace std;
 
 void CheckOutputFile(ostream &ofst);
 
-void car::Out(ofstream &ofst) 
+void car::Out(ostream &ofst) 
 {
 	CheckOutputFile(ofst);
 	ofst << "Engine power = " << enginepower << endl;

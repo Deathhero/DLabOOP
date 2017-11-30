@@ -8,7 +8,7 @@ using namespace std;
 
 void CheckOutputFile(ostream &ofst);
 
-void passengercar::Out(ofstream &ofst) 
+void passengercar::Out(ostream &ofst) 
 {
 	CheckOutputFile(ofst);
 	ofst << "It is passenger car. Max speed = " << maxspeed << endl;

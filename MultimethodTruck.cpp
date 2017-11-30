@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-void truck::Multimethod(car* c, ofstream &outFile)
+void truck::Multimethod(car* c, ostream &outFile)
 {
 	c->CheckWithTruck(outFile);
 }

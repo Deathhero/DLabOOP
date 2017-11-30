@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-void bus::CheckWithBus(ofstream &outFile)
+void bus::CheckWithBus(ostream &outFile)
 {
 	outFile << "Bus and Bus:" << endl;
 }

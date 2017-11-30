@@ -15,12 +15,12 @@ public:
 	int carryingcapacity;
 	// переопределяем интерфейс класса
 	void InData(ifstream &ifst);  // ввод 
-	void Out(ofstream &ofst);     // вывод 
-	void OutOnlyTruck(ofstream &ofst);
-	void Multimethod(car* c, ofstream &outFile);
-	void CheckWithTruck(ofstream &outFile);
-	void CheckWithBus(ofstream &outFile);
-	void CheckWithPassengerCar(ofstream &outFile);
+	void Out(ostream &ofst);     // вывод 
+	void OutOnlyTruck(ostream &ofst);
+	void Multimethod(car* c, ostream &outFile);
+	void CheckWithTruck(ostream &outFile);
+	void CheckWithBus(ostream &outFile);
+	void CheckWithPassengerCar(ostream &outFile);
 	float Func();
 	truck() {} // создание без инициализации.
 };

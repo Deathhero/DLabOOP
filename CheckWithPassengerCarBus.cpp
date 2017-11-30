@@ -4,7 +4,7 @@
 #include <fstream>
 #include <iostream>
 
-void bus::CheckWithPassengerCar(ofstream &outFile)
+void bus::CheckWithPassengerCar(ostream &outFile)
 {
 	outFile << "Passenger Car and Bus:" << endl;
 }
